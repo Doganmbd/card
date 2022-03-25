@@ -1,0 +1,44 @@
+.card-container {
+    width: 400px;
+    background-color: #F38B29;
+    
+   
+    margin: 10px auto;
+    border-radius: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card {
+    width: 150px;
+    background-color: #FBECDC;
+    border-radius: 20px;
+    padding:15px;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+  
+}
+
+.card:hover{
+    -webkit-box-shadow: 5px 0px 15px 5px #000000;
+    box-shadow: 5px 0px 15px 5px blue;
+}
+
+.card:hover img{
+    transform: scale(1.5);
+    transition: 0.5s ease;
+
+}
+
+.card img{
+    height:50px;
+    
+}
+
+h2 {
+    margin: 10px;
+}

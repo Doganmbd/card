@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { ReactComponent as ReactIcon } from "./assets/react.svg";
+import Card from './component/Card';
+import { categories } from "./helper/data"
+import {useState} from "react" 
 
 function App() {
+
+const [isTurn,setIsTurn] = useState(true)
+
+const handleClick = ()=> {
+
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <ReactIcon className="appIcon" />
+<Card categories={categories} onClick={handleClick}
+ isturnprop = {isTurn}
+ setIsTurnProp = {setIsTurn}
+ />
     </div>
   );
 }
