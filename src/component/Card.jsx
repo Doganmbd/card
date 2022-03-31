@@ -14,7 +14,7 @@ function Card({categories,isturnprop,setIsTurnProp}) {
         {categories.map((card,index)=> {
             const {name,img,options} = card
 
-            {isturnprop ?
+            {isturnprop &&
             
 
 
