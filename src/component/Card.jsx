@@ -15,7 +15,7 @@ function Card({categories,isturnprop,setIsTurnProp}) {
             const {name,img,options} = card
 
             {isturnprop ?
-            return(
+            
 
 
 
@@ -35,7 +35,7 @@ function Card({categories,isturnprop,setIsTurnProp}) {
                       
                     </ul>
                 </div> 
-            )
+            
         })}
 
     </div>
